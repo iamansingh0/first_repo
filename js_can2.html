@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bulb on & off</title>
+  </head>
+
+  <body>
+    <p>JavaScript can change HTML attribute values.</p>
+    <br />
+    <p>
+      In this case JavaScript changes the value of the src (source) attribute of
+      an image.
+    </p>
+    <button
+      onclick="document.getElementById('myImage').src= 'bulbon.jpg'  "
+    >
+      Turn on the light
+    </button>
+
+    <img
+      id="myImage"
+      src="bulboff.jpg"
+      alt="bulb-off"
+      style="width: 300px"
+    />
+
+    <button
+      onclick="document.getElementById('myImage').src= 'bulboff.jpg'"
+    >
+      Turn off the light
+    </button>
+  </body>
+</html>
